@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Todo</title>
+  <link rel="stylesheet" href="/ui/todo.css">
+</head>
+<body>
+  <div class="logout-link"><a href="/logout">Logout</a></div>
+
+  <div class="todo-box">
+    <input type="date" id="day">
+    <div id="list"></div>
+    <button id="addBtn">+</button>
+  </div>
+
+  <div id="modal" class="hidden">
+    <div class="modal-box">
+      <h2>Add task</h2>
+
+      <label>Title
+        <input id="task-title" type="text" placeholder="What to do?">
+      </label>
+
+      <div class="chk-wrap">
+        <label for="color-toggle">Add color?</label>
+        <input type="checkbox" id="color-toggle">
+      </div>
+
+      <label id="color-label" class="hidden">Color
+        <input type="color" id="task-color" value="#33aaff">
+      </label>
+
+      <button id="save-task">Add</button>
+    </div>
+  </div>
+
+  <script src="/ui/todo.js"></script>
+</body>
+</html>

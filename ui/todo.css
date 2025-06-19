@@ -1,0 +1,152 @@
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#FFA2B9;
+  color:#000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:40px;
+  min-height:100vh;
+}
+
+.logout-link{
+  position:absolute;
+  top:10px;
+  right:20px;
+}
+.logout-link a{
+  color:#000;
+  text-decoration:underline;
+  font-size:.9em;
+}
+
+.todo-box{
+  background:#FFB2C5;
+  border:2px solid #000;
+  border-radius:15px;
+  padding:30px 40px;
+  width:340px;
+  min-height:400px;
+  box-sizing:border-box;
+}
+
+#day{
+  display:block;
+  margin:0 auto 22px;
+  padding:6px 10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:1em;
+}
+
+#list{
+  margin-bottom:25px;
+}
+
+
+.task{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+  background:#FFE4EB;
+  border-radius:12px;
+  padding:10px 14px;
+  box-shadow:0 2px 6px #0002;
+}
+.task input[type="checkbox"]{
+  transform:scale(1.2);
+  margin:0;
+  cursor:pointer;
+}
+.task .task-tag{
+  background:#888;
+  padding:4px 10px;
+  border-radius:6px;
+  font-weight:500;
+  flex:1;
+  color:#000;
+}
+.task .task-tag.no-color{
+  background:#FFE4EB;
+}
+
+#addBtn{
+  width:100%;
+  height:50px;
+  font-size:1.8em;
+  line-height:0;
+  background:#FDD5DF;
+  border:1px solid #000;
+  border-radius:10px;
+  cursor:pointer;
+}
+#addBtn:hover{
+  background:#FFC2D1;
+}
+
+#modal{
+  position:fixed;
+  inset:0;
+  background:#0008;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hidden{
+  display:none !important;
+}
+
+.modal-box{
+  background:#FFB2C5;
+  border:2px solid #000;
+  border-radius:15px;
+  padding:28px 32px;
+  width:320px;
+  text-align:center;
+}
+.modal-box h2{
+  margin:0 0 22px;
+}
+.modal-box label{
+  display:block;
+  text-align:left;
+  margin-top:15px;
+}
+.modal-box input[type="text"],
+.modal-box input[type="color"]{
+  width:100%;
+  margin-top:6px;
+  padding:6px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+.chk-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.chk-wrap input[type="checkbox"] {
+  transform: translateY(2px) scale(1.2);
+  margin: 0;
+  cursor: pointer;
+}
+
+#save-task{
+  margin-top:30px;
+  width:60%;
+  padding:12px 0;
+  background:#FDD5DF;
+  border:2px solid #000;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:1em;
+  font-weight:bold;
+}
+#save-task:hover{
+  background:#FFC2D1;
+}
